@@ -1,1 +1,49 @@
 /* This file is for your main application css. */
+li {
+  border-style: solid;
+  border-color: #8c8c8c;
+  border-width: 0px 0px 1px 0px;
+}
+a:hover {
+  color: #eeeff5;
+  text-decoration: none;
+}
+.brand-logo:hover {
+  text-decoration: none;
+}
+#new-container {
+  display: flex;
+  flex-direction: row;
+}
+#topics_container {
+  display: flex;
+  flex-direction: column;
+  border-width: 1px 1px 0px 1px;
+  border-style: solid;
+  padding: 5px;
+}
+.customized-collection-item {
+  color: #eeeff5;
+  font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
+}
+.section_header {
+  font-size: 28px;
+  color: #eeeff5;
+  font-family: "Rajdhani";
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.help-block {
+  color: #f55;
+  line-height: 18px;
+}
+
+#topic_title {
+  border-bottom: 1px solid #fff;
+  box-shadow: none;
+  color: #fff;
+  font-size: 28px;
+  font-family: "Ubuntu", sans-serif;
+}

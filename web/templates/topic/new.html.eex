@@ -1,6 +1,8 @@
+<h1 class="section_header">New topic</h1>
 <%= form_for @changeset, topic_path(@conn, :create), fn f -> %>
 <div class="form-group">
-<%= text_input f, :title, placeholder: "Title", class: "form-control", style: "color: #fff; border-bottom: 1px solid #fff"%>
+<%= text_input f, :title, placeholder: "Title", class: "form-control", autocomplete: "off" %>
+<%= error_tag f, :title %>
 </div>
 <%= submit "Save Topic", class: "btn btn-primary  blue-grey darken-1" %>
 <% end %>

@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani" rel="stylesheet">
   </head>
 
   <body class="blue-grey darken-4">
@@ -19,6 +21,7 @@
   <div class="nav-wrapper container">
   <a href="/" class="brand-logo"><i class="material-icons">forum</i><span style="font-family: Teko; font-size:40px">Discuss</span></a>
   </div>
+  </nav>
     <div class="container">
       
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
