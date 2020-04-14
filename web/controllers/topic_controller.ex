@@ -19,13 +19,19 @@ defmodule Discuss.TopicController do
                 conn
                 |> put_flash(:info, "Topic created!")
                 |> redirect(to: topic_path(conn, :index))
-                # render conn, "index.html", topics: Repo.all(Topic)
             {:error, changeset} ->
                 conn
                 |> put_flash(:error, "There was an error creating the topic.") 
                 render "new.html", changeset: changeset
         end
     end
+
+    # def edit(conn, %{"id" => id}) do
+    #     topic = Repo.get(Topic, id)
+    #     changeset = Topic.changeset(topic)
+
+    #     render conn, changeset: changset, topic: topic
+    # end
 
     
 end

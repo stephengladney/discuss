@@ -2,10 +2,21 @@
 <div id="new-container">
 <h1 class="section_header">Topics</h1>
 <div style="flex-grow: 1"></div>
-<a class="btn-small blue-grey b-hover" style="margin: 2.8rem 0 15px 0;">New Topic</a>
+<%= link to: topic_path(@conn, :new), class: "btn-small blue-grey", style: "margin: 2.8rem 0 15px 0;" do %>
+<i class="material-icons left" style="margin-right: 7px;">add</i>new
+<% end %>
 </div>
 <ul class="collection" style="border-color: #666;">
 <%= for topic <- @topics do %>
-<li class="collection-item customized-collection-item" style="background: transparent; padding-top: 15px; padding-bottom: 15px; border-color: #666;" ><%= topic.title %></li>
+<li class="collection-item customized-collection-item" style="background: transparent; padding-top: 15px; padding-bottom: 15px; border-color: #666;" ><%= topic.title %>
+<%= link to: topic_path(@conn, :new), class: "btn-small blue-grey", style: "margin: 2.8rem 0 15px 15px; padding: 0 8px;" do %>
+<i class="material-icons">create</i>
+<% end %>
+
+<%= link to: topic_path(@conn, :new), class: "btn-small red", style: "margin: 2.8rem 0 15px 10px; padding: 0 8px;" do %>
+<i class="material-icons">delete</i>
+<% end %>
+
+</li>
 <% end %>
 </ul>
