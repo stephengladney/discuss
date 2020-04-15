@@ -1,4 +1,4 @@
-<h1 class="section_header">New topic</h1>
+<h1 class="section_header"><a href="../" style="color: #eeeff5;">Topics</a> > New topic</h1>
 <%= form_for @changeset, topic_path(@conn, :create), fn f -> %>
 <div class="form-group">
 <%= text_input f, :title, placeholder: "Title", class: "form-control", autocomplete: "off" %>

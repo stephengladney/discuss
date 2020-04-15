@@ -1,0 +1,9 @@
+<h1 class="section_header"><a href="../" style="color: #eeeff5;">Topics</a> > Edit Topic</h1>
+<%= form_for @changeset, topic_path(@conn, :update, @topic), fn f -> %>
+<div class="form-group">
+<%= text_input f, :title, class: "form-control"%>
+<%= error_tag f, :title %>
+</div>
+<%= submit "Save Topic", class: "btn-small blue-grey" %>
+
+<% end %>

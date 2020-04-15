@@ -16,13 +16,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani" rel="stylesheet">
   </head>
 
-  <body class="blue-grey darken-4">
+  <body id="app">
   <nav class="indigo darken-1">
   <div class="nav-wrapper container">
-  <a href="/" class="brand-logo"><i class="material-icons">forum</i><span style="font-family: Teko; font-size:40px">Discuss</span></a>
+  <a href="/" class="brand-logo"><i class="material-icons">forum</i><span style="font-family: Teko; font-size:40px">Discuss</span><span style="color: #c5cae9; font-size: 10px; margin-left: 9px;">written in Elixir, with love.</span></a>
+  
   </div>
+  
   </nav>
-    <div class="container">
+    <div class="small container">
       
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>

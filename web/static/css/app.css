@@ -4,9 +4,10 @@ li {
   border-color: #8c8c8c;
   border-width: 0px 0px 1px 0px;
 }
+
 a:hover {
   color: #eeeff5;
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 .brand-logo:hover {
   text-decoration: none;
@@ -15,24 +16,53 @@ a:hover {
   display: flex;
   flex-direction: row;
 }
-#topics_container {
+#topic-index-table {
   display: flex;
   flex-direction: column;
-  border-width: 1px 1px 0px 1px;
-  border-style: solid;
-  padding: 5px;
+  border: 1px solid #666;
 }
-.customized-collection-item {
+#app {
+  background: linear-gradient(rgba(7, 9, 21, 0.9), rgba(7, 9, 21, 0.9)),
+    url("https://c4.wallpaperflare.com/wallpaper/674/729/123/code-elixir-programming-wallpaper-preview.jpg")
+      no-repeat center center fixed;
+  -webkit-background-size: cover;
+}
+.indigo-button {
+  background-color: #3949ab;
+}
+.indigo-button:hover {
+  background-color: #3f51b5;
+}
+.topic-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-color: #666;
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.topic-container:hover {
+  /* background-color: #2e3c42; */
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+}
+.topic-container:hover > .topic-title {
+  color: #a0aefd;
+}
+.topic-title {
   color: #eeeff5;
   font-size: 16px;
   font-family: "Ubuntu", sans-serif;
 }
+
 .section_header {
   font-size: 28px;
   color: #eeeff5;
   font-family: "Rajdhani";
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 .help-block {
